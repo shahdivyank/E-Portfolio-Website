@@ -32,7 +32,6 @@
 
 nav {
 	background: white;
-	/* font-size: 2vw; */
 }
 
 nav ul a {
@@ -57,7 +56,6 @@ nav ul a {
 	min-height: 100vh;
 	width: 75vw;
 	margin: auto;
-	/* background-color: red; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -123,7 +121,6 @@ h1 {
 	font-family: "Source Code Pro", monospace;
 	width: max-content;
 	margin: auto;
-
 }
 
 h1:before,
@@ -158,12 +155,9 @@ h1:after {
 	transform: translateY(3rem);
 	animation: fadeInUp 2s ease 6s forwards;
 	text-align: center;
-
 	background: linear-gradient(to right, purple, orange);
-  
 	background-size: 100%;
 	background-repeat: repeat;
-
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; 
 	-moz-background-clip: text;
@@ -193,7 +187,6 @@ h1:after {
 	min-height: 100vh;
 	width: 80vw;
 	margin: auto;
-	/* background-color: green; */
 	position: relative;
 }
 
@@ -214,10 +207,8 @@ h1:after {
 	font-weight: 800;
 	font-size: 1.7em;
 	background: linear-gradient(to right, orange, red);
-  
 	background-size: 100%;
 	background-repeat: repeat;
-
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; 
 	-moz-background-clip: text;
@@ -235,10 +226,8 @@ h1:after {
 	font-weight: 1000;
 	font-size: 1.8em;
 	background: linear-gradient(to right, red, purple);
-  
 	background-size: 100%;
 	background-repeat: repeat;
-
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; 
 	-moz-background-clip: text;
@@ -267,7 +256,6 @@ h1:after {
 	min-height: 100vh;
 	width: 80vw;
 	margin: auto;
-	/* background-color: blue; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -282,8 +270,6 @@ h1:after {
 .card {
 	height: 425px;
 	width: 100%;
-	/* margin: 0px 5px; */
-	/* background: linear-gradient(to right, orange, purple); */
 	background: white;
 	display: flex;
 	align-items: center;
@@ -296,14 +282,12 @@ h1:after {
 
 .card-content {
 	background: white;
-	/* margin: 5px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	height: 100%;
 	width: 100%;
-	/* width: 30%; */
 	border-radius: 5px;
 	border: none;
 	outline: none;
@@ -322,7 +306,6 @@ h1:after {
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.1em;
-	
 }
 
 .card-content .used_tech_p {
@@ -330,7 +313,6 @@ h1:after {
 }
 
 .card-content .button{
-	/* background: linear-gradient(to right, purple, gray); */
 	background: white;
 	padding: 0;
 	margin: 0;
@@ -362,27 +344,13 @@ h1:after {
   color: white;
 }
 
-/* .grad_1 {
-	background: rgb(63,94,251);
-	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-}
-
-.grad_2 {
-	background: rgb(253,29,29);
-	background: radial-gradient(circle, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
-} */
-
 .tech_used {
-	/* display: flex;
-	align-items: center;
-	justify-content: center; */
 	position: absolute;
 	bottom: 20%;
 }
 
 .tech_used > * {
 	margin: 5px 0px;
-	/* margin-bottom: 2vh; */
 	padding: 0;
 }
 
@@ -390,14 +358,10 @@ h1:after {
 	min-height: 100vh;
 	width: 80vw;
 	margin: auto;
-	/* background-color: purple; */
-	/* position: relative; */
 	display: flex;
-	/* flex-direction: column; */
 	justify-content: center;
 	align-items: center;
 }
-
 
 .required {
 	width: 100%;
@@ -460,51 +424,4 @@ input {
 
 .submit button:hover {
 	transform: scale(1.2);
-}
-
-/* #footer {
-	margin: auto;
-	background-color: pink;
-}
-
-#copyright {
-	text-align: center;
-} */
-
-/* .top-projects, .bottom-projects {
-	display: flex;
-	flex-direction: row;
-	padding: .25em;
-	background: transparent;
-} */
-
-/* @media only screen and (max-width: 1050px) {
-	.top-projects, .bottom-projects {
-		display: none;
-	}
-	
-	.rank_1, .rank_2, .rank_3 {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-	}
-} */
-
-/* @media only screen and (max-width: 800px) {
-	.top-projects, .bottom-projects {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.card {
-		margin-bottom: 10px;
-	}
-} */
-
-/* .row-indent {
-  background-color: blue;
-  padding-right: 0px;
 }
