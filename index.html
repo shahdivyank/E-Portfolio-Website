@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Divyank Shah</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
   </head>
 
 	<body>
 		<div class = "menu">
-			<nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
+			<nav class="navbar fixed-top navbar-expand-lg p-md-3">
 			<div class="container">
 				<a class="navbar-brand" href="#home">Divyank Shah</a>
 				<button
@@ -33,16 +35,16 @@
 				<div class="mx-auto"></div>
 				<ul class="navbar-nav">
 					<li class="nav-item">
-					<a class="nav-link text-black" href="#home">home</a>
+					<a class="nav-link" href="#home">home</a>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link text-black" href="#resume">resume</a>
+					<a class="nav-link" href="#resume">resume</a>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link text-black" href="#projects">projects</a>
+					<a class="nav-link" href="#projects">projects</a>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link text-black" href="#contact">contact</a>
+					<a class="nav-link" href="#contact">contact</a>
 					</li>
 				</ul>
 				</div>
@@ -54,6 +56,20 @@
 					<h1>I'm Divyank Shah</h1>
 					<p class = "subtitle">an aspiring embedded systems engineer<br>he/him/his</p>
 				</div>
+				<fieldset id = "fieldset">
+					<div class="switch-toggle switch-ios">
+						<input id="week" name="view" type="radio">
+						<label for="week" onclick="dark_mode()">Dark</label>
+
+						<input id="month" name="view" type="radio">
+						<label for="month" onclick="auto_mode()">Auto</label>
+
+						<input id="day" name="view" type="radio" checked>
+						<label for="day" onclick="light_mode()">Light</label>
+
+						<a></a>
+					</div>
+				</fieldset>
 				<div class = "icons">
 					<a href = "https://www.linkedin.com/in/divyank-shah/" target = "_blank"><i class="fab fa-linkedin-in"></i></a>
 					<a href = "https://instagram.com/divyank.shah" target = "_blank"><i class="fab fa-instagram"></i></a>
@@ -82,9 +98,12 @@
 					<p id = "cnDescription">
 						<ul>
 							<li>Instruct students ages 5 - 14 through various camps and programs</li>
+							<li>Develop 16 week Python and Java curriculumns to use for after school programss</li>
 							<li>Incoporate game development through JavaScript, Lua</li>
 							<li>Taught students about MCreator, Roblox Studio, Python to develop custom games and game assets</li>
+							<li>Build, operate, and maintain 3D Printer (Ender 5 Pro) and educate staff and students about maintance and operations</li>
 							<li>Participate in social media campaigns to boost customer reach and interaction through Instagram and Facebook</li>
+							<li>Lead social media content creation on Tik Tok</li>
 						</ul>
 					</p>
 					
@@ -293,7 +312,7 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 proj-col">
 						<div class="card grad_1">
 							<div class="card-content">
-								<h2 class = "card-title">Moderator Disord Bot</h2>
+								<h2 class = "card-title">Moderator Discord Bot</h2>
 								<p class = "card-body">Discord bot to monitor and delete messages containing profanity and alert the sender, and it account for letter substitions such as $ -> S.</p>
 								<div class = "tech_used">
 									<p class = "used_tech_p">Technologies Used:</p>

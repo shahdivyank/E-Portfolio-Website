@@ -1,12 +1,9 @@
-:root {
-	--clr-neutral-900: hsl(207, 19%, 9%);
-	--clr-neutral-100: hsl(0, 0%, 100%);
-	--clr-accent-400: hsl(142, 90%, 61%);
-}
-
 * {
 	padding: 0;
 	margin: 0;
+	--text_background: white;
+	--text_color: black;
+	--placeholder: gray;	
 }
 
 .header{
@@ -17,10 +14,20 @@
 	text-align: center;
 }
 
-.header, h1 {
-	background: rgb(9,9,121);
-	background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+h1 {
+	background: linear-gradient(90deg, purple, orange);
   
+	background-size: 100%;
+	background-repeat: repeat;
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.header {
+	background: linear-gradient(to right, green, blue);
 	background-size: 100%;
 	background-repeat: repeat;
 
@@ -34,12 +41,16 @@ nav {
 	background: white;
 }
 
-nav ul a {
+nav ul li a {
 	font-size: 1.5em;
 	font-weight: 400;
 	font-family: "Source Code Pro", monospace;
 	margin-left: 12px;
 	margin-right: 12px;
+}
+
+.nav-link, .navbar-brand {
+	color: black;
 }
 
 .navbar-brand {
@@ -69,7 +80,7 @@ nav ul a {
 }
 
 i {
-	margin: 2.5vw;
+	margin: 2.25vw;
 	color: black;
 	font-size: 36px;
 }
@@ -90,7 +101,7 @@ i {
 .icons .fa-linkedin-in:hover, .icons .fa-linkedin-in:focus-within {
 	transform: scale(1.5);
 	border: none;
-	background: linear-gradient(to right, navy, blue);
+	background: linear-gradient(to right, aquamarine, blue);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -115,6 +126,15 @@ i {
 	outline: none;
 }
 
+fieldset {
+	width: 25%;
+	margin-top: 35px;
+}
+
+.switch-ios input {
+	background: darkgray;
+}
+
 h1 {
 	font-size: clamp(1rem, 3vh + 1rem, 4rem);
 	position: relative;
@@ -134,14 +154,14 @@ h1:after {
 }
 
 h1:before {
-	background: white;
+	background: var(--text_background);
 	animation: 
 		typewriter 4s steps(16) 1s forwards;
 }
 
 h1:after {
 	width: .125em;
-	background: black;
+	background: var(--text_color);
 	animation: 
 		typewriter 4s steps(16) 1s forwards, blink 750ms steps(16) infinite;
 }
@@ -152,10 +172,11 @@ h1:after {
 	font-size: 1.5rem;
 	font-weight: 400;
 	opacity: 0;
+	margin-top: 10px;
 	transform: translateY(3rem);
 	animation: fadeInUp 2s ease 6s forwards;
 	text-align: center;
-	background: linear-gradient(to right, purple, orange);
+	background: linear-gradient(to right, orange, purple);
 	background-size: 100%;
 	background-repeat: repeat;
 	-webkit-background-clip: text;
@@ -206,7 +227,7 @@ h1:after {
 	font-family: "Source Code Pro", monospace;
 	font-weight: 800;
 	font-size: 1.7em;
-	background: linear-gradient(to right, orange, red);
+	background: linear-gradient(to right, purple, red);
 	background-size: 100%;
 	background-repeat: repeat;
 	-webkit-background-clip: text;
@@ -408,7 +429,7 @@ input {
 }
 
 ::placeholder {
-	color: gray;
+	color: var(--placeholder);
 	font-size: 1.1em;
 }
 
@@ -434,4 +455,8 @@ input {
 
 .submit button:hover {
 	transform: scale(1.2);
+}
+
+@media (prefers-color-scheme: dark) {
+
 }
