@@ -268,7 +268,7 @@ h1:after {
 }
 
 .card {
-	height: 425px;
+	height: 400px;
 	width: 100%;
 	background: white;
 	display: flex;
@@ -302,14 +302,18 @@ h1:after {
 	font-size: 1.25em;
 }
 
-.card-content p{
+.card-content .card-body{
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.0em;
+	padding-top: 5px;
+	margin: 0;
 }
 
-.card-content .used_tech_p {
+.card-content .used_tech_p{
 	font-size: 1.1em;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .card-content .button{
