@@ -316,7 +316,7 @@ h1:after {
 	background: white;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 2vh;
+	margin-bottom: 20px;
 	width: max-content;
 	height: max-content;
 	display: flex;
@@ -352,6 +352,12 @@ h1:after {
 .tech_used > * {
 	margin: 5px 0px;
 	padding: 0;
+}
+
+.logos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #contact {
