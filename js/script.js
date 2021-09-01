@@ -31,7 +31,7 @@ function dark_mode() {
 	}, function () {
 		$(this).css("background-color", "black");
 		$(this).css("color", "white");
-		
+
 	});
 }
 
@@ -51,7 +51,6 @@ function light_mode() {
 	}, function () {
 		$(this).css("background-color", "white");
 		$(this).css("color", "black");
-		
 	});
 }
 

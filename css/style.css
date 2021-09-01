@@ -131,10 +131,6 @@ fieldset {
 	margin-top: 35px;
 }
 
-.switch-ios input {
-	background: darkgray;
-}
-
 h1 {
 	font-size: clamp(1rem, 3vh + 1rem, 4rem);
 	position: relative;
@@ -397,6 +393,7 @@ h1:after {
 .required {
 	width: 100%;
 }
+
 .required p{
 	text-align: left;
 	color: lightcoral;
@@ -444,12 +441,12 @@ input {
 }
 
 .submit button{
+	color: var(--placeholder);
 	border: 1px solid lightgray;
 	margin: 15px;
 	padding: 15px 25px;
 	border-radius: 5px;
 	background: white;
-	color: gray;
 	font-size: 1.1em;
 }
 
