@@ -59,6 +59,15 @@ nav ul li a {
 	font-family: "Source Code Pro", monospace;
 }
 
+nav span {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='purple' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+nav .navbar-toggler {
+  border-color: purple;
+  border-width: .5px;
+} 
+
 .div {
 	height: 12vh;
 }
@@ -127,7 +136,7 @@ i {
 }
 
 fieldset {
-	width: 25%;
+	min-width: 25vh;
 	margin-top: 35px;
 }
 

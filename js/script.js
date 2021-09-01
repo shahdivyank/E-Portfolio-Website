@@ -15,6 +15,7 @@ $(document).ready(function () {
 	}
 });
 
+
 function dark_mode() {
 	$("*").not("#fieldset *").css("backgroundColor", "#111111");
 	$("*").not("#fieldset *").css("--text_color", "white");
@@ -24,6 +25,7 @@ function dark_mode() {
 	$(".button, .card").css("border-color", "white");
 	$("ul li a").css("color", "white");
 	$(".required p").css("color", "lightcoral");
+
 
 	$(".card a").hover(function () {
 		$(this).css("background-color", "white");
